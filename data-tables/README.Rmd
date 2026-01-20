@@ -1,0 +1,105 @@
+# data-tables/ 
+
+This folder contains cumulative totals since the start of the COVID-19 outbreak in NYC, which the Health Department defines as the diagnosis of the first confirmed COVID-19 case on February 29, 2020. The Health Department recommends against interpreting daily changes to these files as one day’s worth of data, due to the difference between date of event and date of report.
+
+## Files 
+
+### data-totals.csv
+
+This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
+
+Rates are:   
+- Cumulative since the start of the outbreak   
+
+Indicators include: 
+
+| Variable name | Definition | Timeframe | 
+|--------------------|------------------------------------------------------------|------------| 
+| group |Population group category | | 
+| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
+| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
+| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
+| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
+| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
+| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
+| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
+| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+
+Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+
+### data-totals-by-month.csv
+
+This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
+
+Rates are:   
+- Cumulative since the start of the outbreak   
+
+Indicators include: 
+
+| Variable name | Definition | Timeframe | 
+|--------------------|------------------------------------------------------------|------------| 
+| group |Population group category | | 
+| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
+| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
+| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
+| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
+| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
+| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
+| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
+| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+
+Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+
+### data-fent-pos-by-class.csv
+
+This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
+
+Rates are:   
+- Cumulative since the start of the outbreak   
+
+Indicators include: 
+
+| Variable name | Definition | Timeframe | 
+|--------------------|------------------------------------------------------------|------------| 
+| group |Population group category | | 
+| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
+| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
+| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
+| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
+| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
+| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
+| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
+| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+
+Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+
+### data-multi-sub-pos.csv
+
+This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
+
+Rates are:   
+- Cumulative since the start of the outbreak   
+
+Indicators include: 
+
+| Variable name | Definition | Timeframe | 
+|--------------------|------------------------------------------------------------|------------| 
+| group |Population group category | | 
+| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
+| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
+| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
+| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
+| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
+| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
+| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
+| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
+| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+
+Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
