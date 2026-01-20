@@ -1,4 +1,4 @@
-# {NYCHealth Starter Template}
+# NYC Drug Checking Data
 
  {This repository is a collection of boilerplate for creating new NYCHealth organization repositories - use it to get started right! *Replace any text with your own project info and description*}
 
