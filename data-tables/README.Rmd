@@ -1,105 +1,64 @@
 # data-tables/ 
 
-This folder contains cumulative totals since the start of the COVID-19 outbreak in NYC, which the Health Department defines as the diagnosis of the first confirmed COVID-19 case on February 29, 2020. The Health Department recommends against interpreting daily changes to these files as one day’s worth of data, due to the difference between date of event and date of report.
+This folder contains key summary measures from the NYC Drug Checking Program, which the Health 
+Department launched in November 2021. The Health Department reminds users that these measures 
+may not represent all of the illicit drug supply across NYC. Different data tables 
+may represent different time periods of the program's operation.
 
 ## Files 
 
-### data-totals.csv
+### data_total_samples.csv
 
-This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
-
-Rates are:   
-- Cumulative since the start of the outbreak   
+This file contains the total number of drug samples submitted to the NYC Drug Checking Program since the program's launch in November 2021.
 
 Indicators include: 
 
-| Variable name | Definition | Timeframe | 
-|--------------------|------------------------------------------------------------|------------| 
-| group |Population group category | | 
-| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
-| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
-| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
-| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
-| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
-| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
-| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
-| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+| Variable name | Definition |  Timeframe |
+|:-:|:-:|:-:|
+| Measure | Number of samples received | |
+| Total | Total (numeric) | Cumulative |
 
-Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+### data_counts_per_month.csv
 
-### data-totals-by-month.csv
-
-This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
-
-Rates are:   
-- Cumulative since the start of the outbreak   
+This file contains provides the total number of drug samples submitted to the NYC Drug Checking Program for each month since the program's launch in November 2021. 
 
 Indicators include: 
 
-| Variable name | Definition | Timeframe | 
-|--------------------|------------------------------------------------------------|------------| 
-| group |Population group category | | 
-| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
-| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
-| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
-| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
-| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
-| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
-| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
-| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+| Variable name | Definition | Timeframe |
+|:-:|:-:|:-:|
+| yr_mo | The year-month (Month abbreviation and year) since November 2021 | |
+| count | Total (numeric) | Cumulative |
 
-Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+### data_fent_pos_by_substance_class.csv
 
-### data-fent-pos-by-class.csv
-
-This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
-
-Rates are:   
-- Cumulative since the start of the outbreak   
+This file contains the measures necessary to calculate the prevalence of fentanyl by select and common categories of sale. Measures are cumulative since the launch of the program since November 2021. 
 
 Indicators include: 
 
-| Variable name | Definition | Timeframe | 
-|--------------------|------------------------------------------------------------|------------| 
-| group |Population group category | | 
-| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
-| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
-| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
-| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
-| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
-| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
-| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
-| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+| Variable name | Definition | Timeframe |
+|:-:|:-:|:-:|
+| drugtype_sold_combined | Categorical variable identifying the substance sold as category, including benzodiazepines, cocaine, methamphetamine, opioid, or other | |
+| Total_Lab | Total number of drug samples in the sold as category that were sent to the secondary laboratory for testing | Cumulative |
+| Total_Lab_Fent_Pos | Total number of drug samples in the sold as category that were sent to the secondary laboratory for testing that were found to contain fentanyl | Cumulative | 
+| Pct_Lab_Fent_Pos | Percent of drug samples in the sold as category that were sent to the secondary laboratory for testing that were found to contain fentanyl (note: this column is calculated as Total_Lab_Fent_Pos/Total_Lab) | Cumulative |
 
-Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+Note that these measures may exclude a limited number of samples where there was information available regarding the intentional or unintentional contamination during the production, consumption, or checking phase. 
 
-### data-multi-sub-pos.csv
+### data_multipanel_positivity.csv
 
-This file contains counts and rates of cases, hospitalizations, and deaths, stratified by age, sex, borough, race/ethnicity, and neighborhood poverty (low, medium, high, very high). 
-
-Rates are:   
-- Cumulative since the start of the outbreak   
+This file contains the measures necessary to calculate the prevalence of select substances of concern within substances sold as opioids. Measures are calculated for the most recent 12 months. 
 
 Indicators include: 
 
-| Variable name | Definition | Timeframe | 
-|--------------------|------------------------------------------------------------|------------| 
-| group |Population group category | | 
-| subgroup | Population subgroup: age group in years, sex, borough of residence, race/ethnicity, or neighborhood poverty group| | 
-| CONFIRMED_CASE_RATE | Rate of confirmed cases per 100,000 people by age group | Cumulative | 
-| CASE_RATE | Rate of confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| HOSPITALIZED_RATE | Rate of hospitalized confirmed and probable cases per 100,000 people by age group | Cumulative | 
-| DEATH_RATE | Rate of total deaths per 100,000 people by age group | Cumulative | 
-| CONFIRMED_CASE_COUNT | Number of confirmed cases by age group | Cumulative | 
-| PROBABLE_CASE_COUNT | Number of probable cases by age group | Cumulative | 
-| CASE_COUNT | Number of confirmed and probable cases by age group | Cumulative | 
-| HOSPITALIZED_COUNT | Number of hospitalized confirmed and probable cases by age group | Cumulative | 
-| DEATH_COUNT | Number of total deaths by age group | Cumulative | 
+| Variable name | Definition | Timeframe |
+|:-:|:-:|:-:|
+| yr_mo | The year-month (Month abbreviation and year) since November 2021 | |
+| Total_Lab | Total number of drug samples sold as opioids that were sent to the secondary laboratory for testing | Cumulative |
+| Total_Lab_Fent_Pos | Total number of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain fentanyl | Cumulative |
+| Total_Lab_Xyl_Pos | Total number of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain xylazine | Cumulative | 
+| Total_Lab_Med_Pos | Total number of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain medetomidine | Cumulative |
+| Pct_Lab_Fent_Pos | Percent of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain fentanyl (note: this column is calculated as Total_Lab_Fent_Pos/Total_Lab) | Cumulative |
+| Pct_Lab_Xyl_Pos | Percent of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain xylazine (note: this column is calculated as Total_Lab_Xyl_Pos/Total_Lab) | Cumulative |
+| Pct_Lab_Med_Pos | Percent of drug samples sold as opioids that were sent to the secondary laboratory for testing that were found to contain medetomidine (note: this column is calculated as Total_Lab_Med_Pos/Total_Lab) | Cumulative |
 
-Note that sum of counts in this file may not match citywide values because of records with missing demographic information. 
+Note: these measures pertain only to samples that were sold as an opioid.
