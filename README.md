@@ -9,10 +9,10 @@ Data are preliminary and subject to change. Information on this page will change
 ***
 
 This Readme includes:
+
 - How to use this repository
 - Important changes (by date)
-- Key Technical notes
-- Contents
+- Key Technical Notes
 
 ***
 
@@ -23,23 +23,25 @@ This repository contains CSV (comma separated values) files of data, and Readme 
 
 Alternatively, you can download a single file. Click on a file you would like to download. Next, click the "Raw" button. Right click and save as a CSV file. 
 
-**For help understanding a file**, you can consult the documentation we have provided in the Readme files for each folder of data. To find  Readme files, just click on a folder name, above, and scroll down. Documentation is organized by file name, so you can scroll through the Readme, find the name of the file you are using for, and read documentation on it. Additionally, some universal documentation is provided in the [Key Technical Notes](https://github.com/nychealth/coronavirus-data/blob/master/README.md#key-technical-notes). 
+**For help understanding a file**, you can consult the documentation we have provided in the Readme files for each folder of data. To find  Readme files, just click on a folder name, above, and scroll down. Documentation is organized by file name, so you can scroll through the Readme, find the name of the file you are using for, and read documentation on it.
 
-**Questions and custom requests**: We will try to answer questions about the data in this repository as we are able to. If you have a question, please search the [Issues](https://github.com/nychealth/coronavirus-data/issues?q=) to see if it’s already been addressed. Please understand that we are responding to a pandemic and we might not be able to address all questions in a timely manner.  We are not able to accommodate custom data requests placed via Github.  
-
-***
-
-## Update on February XXX, 2026
+**Questions and custom requests**: We will try to answer questions about the data in this repository as we are able to. If you have a question, please search the [Issues](https://github.com/nychealth/drugchecking-data/issues?q=) to see if it’s already been addressed. Please understand that we are responding to a pandemic and we might not be able to address all questions in a timely manner.  We are not able to accommodate custom data requests placed via Github.  
 
 ***
 
-### 
+## Important Changes (by date)
+
+### February 2026 
+
+- Dashboard launched with data through December 2025
+
 
 ***
 
-# Key Technical Notes
+## Key Technical Notes
 
-## Public health reporting  
+## Public health reporting 
+
 ### Reporting lag 
 
 Our data are updated monthly. These lags are due to standard delays (up to several days) in receiving secondary laboratory testing results and the time necessary to carry out sufficient data quality checks. Given the delay, our data may not represent the current illicit drug supply.
