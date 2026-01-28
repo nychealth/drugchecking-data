@@ -1,73 +1,64 @@
-# {NYCHealth Starter Template}
+# NYC Drug Checking Data
 
- {This repository is a collection of boilerplate for creating new NYCHealth organization repositories - use it to get started right! *Replace any text with your own project info and description*}
+This repository contains data from the NYC Drug Checking Program in New York City (NYC). The NYC Drug Checking Program launched in November 2021 in collaboration with existing community-based organizations. 
 
- {Included: an open source [license](LICENSE) as recommended by the citywide GitHub policy, a `.gitignore` [file](.gitignore) to configure to avoid publishing information that is non-public, and this README file template. See the [Standard Operating Procedures](https://github.com/nychealth/nychealth-github-sop) for more information and links describing these elements.}
+You can view visualizations of these data on the Health Department’s Drug Checking Data webpage.
 
- {Use or replace the suggested sections below as needed by your project. **Grateful acknowledgement is made to [NYC Planning Labs](https://labs.planning.nyc.gov/) for most of the contents of this ReadMe file.**}
+Data are preliminary and subject to change. Information on this page will change as data and documentation are updated. Data are updated in the first week of each month.
 
-{Replace this with a screenshot of the application or output.}
+***
 
-## How you can help
+This Readme includes:
 
-In the spirit of free software, everyone is encouraged to help improve this project.  Here are some ways you can contribute.
+- How to use this repository
+- Important changes (by date)
+- Key Technical Notes
 
-- Comment on or clarify [issues](link to issues)
-- Report [bugs](link to bugs)
-- Suggest new features
-- Write or edit documentation
-- Write code (no patch is too small)
-  - Fix typos
-  - Add comments
-  - Clean up code
-  - Add new features
+***
 
-## Requirements
+## How to use this repository
+This repository contains CSV (comma separated values) files of data, and Readme files with important documentation of the data. If you are unfamiliar with Github, you may find these instructions helpful:
 
-You will need the following things properly installed on your computer.
+**To download data**, scroll up to the green button labelled "Code." Clicking this button will start a download of a ZIP file of the entire contents of this repository.
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (with NPM)
-- [R](https://www.r-project.org/)
-- {Replace this list with the app's dependencies.}
+Alternatively, you can download a single file. Click on a file you would like to download. Next, click the "Raw" button. Right click and save as a CSV file. 
 
-## Local development
+**For help understanding a file**, you can consult the documentation we have provided in the Readme files for each folder of data. To find  Readme files, just click on a folder name, above, and scroll down. Documentation is organized by file name, so you can scroll through the Readme, find the name of the file you are using for, and read documentation on it.
 
-- Clone this repo `command`
-- Install Dependencies `command`
-- Start the server `command`
+**Questions and custom requests**: We will try to answer questions about the data in this repository as we are able to. If you have a question, please search the [Issues](https://github.com/nychealth/drugchecking-data/issues?q=) to see if it’s already been addressed. Please understand that we are responding to a pandemic and we might not be able to address all questions in a timely manner.  We are not able to accommodate custom data requests placed via Github.  
 
-## Architecture
+***
 
-{"Lay of the land" structure of the codebase, components...}
+## Important Changes (by date)
 
-## Backend services
+### February 2026 
 
-- **Geosupport API** - Description of this service
-- **Service two** - Description of this service
-- **Service three** - Description of this service
-- {Replace this list with the app's backend service dependencies, or remove if not applicable.}
+- Dashboard launched with data through December 2025
 
-## Testing and checks
 
-- **Update this list** - with the project's QA/QC rules and any testing information; below are examples only
+***
 
-- **ESLint** - We use ESLint with Airbnb's rules for JavaScript projects
-  - Add an ESLint plugin to your text editor to highlight broken rules while you code
-  - You can also run `eslint` at the command line with the `--fix` flag to automatically fix some errors.
+## Key Technical Notes
 
-- **Testing**
-  - run `ember test --serve`
-  - Before creating a Pull Request, make sure your branch is updated with the latest `develop` and passes all tests
+## Public health reporting 
 
-## Deployment
+### Reporting lag 
 
-{Description of what type of hosting environment is required, and steps for how you deploy -- e.g `git push dokku master`.}
+Our data are updated monthly. These lags are due to standard delays (up to several days) in receiving secondary laboratory testing results and the time necessary to carry out sufficient data quality checks. Given the delay, our data may not represent the current illicit drug supply.
+
+### Differences between City and State values
+
+Generally, the NYC Health Department and the New York State Department of Health will not have matching numbers for the same metrics, though they report the same general trends. Some reasons for this include:
+
+- Different data sources for different metrics
+
+- Different analytical and informatics processes
 
 ## Contact us
 
 You can comment on issues and we'll follow up as soon as we can. 
-{Other ways to contact can be entered here}
+For more specific questions about the data, please reach out to the 
+NYC Drug Checking Team directly at <drugchecking@health.nyc.gov>.
 
 ## Communications disclaimer
 
